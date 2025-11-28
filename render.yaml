@@ -1,6 +1,7 @@
 services:
   - type: web
     name: todo-app-backend
+    root: chapter_4
     env: node
     plan: free
     buildCommand: npm run build
