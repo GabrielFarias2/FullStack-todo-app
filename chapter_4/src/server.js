@@ -32,6 +32,6 @@ app.get("/", (req, res) => {
 app.use("/auth", authRoutes);
 app.use("/todos", authMiddleware, todoRoutes);
 
-app.listen(PORT, () => {
-  console.log(`server has started on: ${PORT}`)
-})
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
